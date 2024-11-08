@@ -1,0 +1,133 @@
+:root {
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --header-background: #80C3F4;
+    --button-background: #4097E3;
+    --button-color: #ffffff;
+    --button-hover-background: #367cba;
+    --border-color: #ced4da;
+}
+
+
+body.dark-theme {
+    --background-color: #24272E;
+    --text-color: #D3D3D3;
+    --header-background: #101C26;
+    --button-background: #F0E714;
+    --button-color: #101C26;
+    --button-hover-background: #bfb912;
+    --border-color: #939292;
+    color-scheme: dark light;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.8;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--header-background);
+    color: white;
+    padding: 10px 15px 40px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.theme-button {
+    position: absolute;
+    right: 25px;
+    top: 65px;
+}
+
+h1 {
+    margin-top: 120px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--button-color);
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: var(--button-hover-background);
+}
+
+.application-form {
+    padding: 30px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #c0c0c0;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: left;
+    margin-bottom: 15px;
+
+    label {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+

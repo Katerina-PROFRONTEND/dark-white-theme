@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light / dark theme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Добавить комментарий</h1>
+        <p>Ваши личные email и номер телефона не будут опубликованы</p>
+        <button id="theme-toggle" class="theme-button">Переключить тему</button>
+    </div>
+</header>
+
+<main>
+    <section class="application-form">
+        <div class="container">
+            <form id="form">
+                <label for="message">Комментарий:</label>
+                <textarea id="message" placeholder="Введите ваш комментарий" required></textarea>
+
+                <label for="name">Имя:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Введите ваш email" required>
+
+                <label for="phone">Ваш телефон:</label>
+                <input type="tel" id="phone" placeholder="Введите ваш телефон" required>
+
+                <div class="checkbox-container">
+                    <label for="save-data">Сохранить моё имя, email и номер телефона в этом браузере</label>
+                    <input type="checkbox" id="save-data">
+                </div>
+
+                <button type="submit">Отправить комментарий</button>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
